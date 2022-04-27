@@ -44,10 +44,10 @@ RUN mkdir -p ${REF}/init.groovy.d
 
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.241}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.345}
 
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=c30dde89abc48a5d05aabdba1259b76979573ec7b146ae8449e84dd44017c182
+ARG JENKINS_SHA=e06a4289afe2877d024e49bf72b53494b912eb2c4f931e00254b5b1dd9fee447
 
 # Can be used to customize where jenkins.war get downloaded from
 ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war
